@@ -1,0 +1,93 @@
+.img-thumbnail{
+	width:200px;
+	height:150px;
+}
+
+textarea{
+	width:50% !important;
+	margin-left:15px;
+}
+
+.ar{
+	width:40%;
+}
+
+.sw{
+	font-family: 'Oswald', sans-serif;
+	color:whitesmoke;
+}
+
+html{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(87, 85, 85));
+	height:100%;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(87, 85, 85));
+	height:100%;
+}
+
+.front{
+	margin-left:20px;
+}
+
+.d-inline-flex{
+	float: left;
+	margin:1.66%;
+}
+
+.container{
+	border: 1px solid whitesmoke;
+	background-color:#2c292a;
+	color:whitesmoke;
+	height:60%;
+}
+
+.nav-tabs{
+    border: none !important;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	color: whitesmoke;
+}
+
+.auth{
+	margin-left:6px;
+}
+
+p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+	color: whitesmoke;
+}
+
+.auth{
+	color:white ;
+	font-size:0.75em;
+	padding-left:2px;
+}
+.inside{
+	width:75% !important;
+	height:auto;
+}
+
+.info{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+	color: whitesmoke;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	color: whitesmoke;
+}
+
+.wrapper{
+	width:33%;
+	margin-left:30%;
+}
+
+h2{
+	font-family: 'Pacifico', cursive;
+	margin-left:30%;
+	color:whitesmoke;
+}

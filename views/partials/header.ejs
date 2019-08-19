@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>Events</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+	
+		<nav class="navbar navbar-dark bg-dark">	
+				<div class="navbar-header">
+					<a class="navbar-brand" href="home.ejs"><p>XYZ</p></a>
+				</div>
+				<ul class="nav nav-tabs ml-auto">
+					<% if(!currentUser){ %>
+                    <li><a href="/login" class="auth">Login</a></li>
+                	<li><a href="/register" class="auth">Sign Up</a></li>
+					<% } else { %>
+                        <li><a href="#">Hey, <%= currentUser.username %></a></li>
+                		<li><a href="/logout" class="auth">Logout</a></li>
+            	<% } %>
+			</ul>
+				
+		</nav>

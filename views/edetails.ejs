@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+<div class="wrapper">
+	
+	<div><img class="inside" src= "<%=event.eImg%>"></div>
+	<h1><%=event.eName %></h1>
+
+	<div class="d-flex flex-column bd-highlight mb-3">
+  		<div class="p-2 bd-highlight info">Place:<%=event.ePlace %></div>
+		<div class="p-2 bd-highlight info">Date:<%=event.eDate %></div>
+  		<div class="p-2 bd-highlight info">Price:<%=event.ePrice %></div>
+  		<div class="p-2 bd-highlight info">Desc:<%=event.eDesc %></div>
+	</div>
+</div>
+
+<% include ./partials/footer %>

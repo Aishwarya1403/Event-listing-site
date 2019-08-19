@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+ 	<form action="/events" method="POST">
+		<div class="form-group col-md-6">
+				<label class="sw">Event name</label>
+                <input type="text" class="form-control" name=event[eName] placeholder="Event-name" required>
+	 	</div>
+        <div class="form-group col-md-6">
+                <label class="sw" for="place">City</label>
+                <input type="text" class="form-control" placeholder="Place" name= event[ePlace] required>
+        </div>
+        <div class="form-group col-md-2">
+        	<label class="sw" for="Price">Price (Rs.)</label>
+            <input type="text" class="form-control" placeholder="Price" name= event[ePrice] required>
+        </div>
+	 	<div class="form-group col-md-6">
+			<label class="sw" for="image">Image</label>
+			<input type="text" class="form-control" name= event[eImg] placeholder="enter-link" required>
+	 </div>
+		<div class="form-group">
+            	<label class="sw" for="inputInfo">Descriptions</label>
+                <textarea class="form-control" rows="2" id="inputInfo" name= event[eDesc] maxlength="70"></textarea>
+        </div> 
+                
+        <button type="submit" class="btn btn-dark">Submit</button>
+	</form>
+
+<% include ./partials/footer %>

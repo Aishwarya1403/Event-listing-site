@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+<h2>
+	Events-List...<i class="fa fa-pencil" aria-hidden="true"></i>
+
+</h2>
+
+<% details.forEach(function (details){ %>
+  <div class="d-inline-flex p-2">
+	<div class="d-flex flex-column container">
+		<div class="p-2"><img class="img-thumbnail img-fluid" src= "<%=details.eImg%>"></div>
+		<div class="p-2 front"><strong><%= details.eName %></strong></div>
+		<a href="/events/<%= details._id %>" class="btn btn-link">...more</a>
+	  </div>
+	  <% if(currentUser){ %>
+	  <form action="/events/<%= details._id %>?_method=DELETE" method="POST">
+			<button class="btn btn-primary">Delete</button>
+		</form>
+	  <% } %>
+</div>
+
+
+<% }) %>
+
+<% include ./partials/footer %>
